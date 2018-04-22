@@ -1,0 +1,53 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo Hello"
+        }, 
+        {
+            "label": "build-1",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-o", "output/1.exe",
+                "src/main.1.c"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build-2",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-o", "output/2.exe",
+                "src/main.2.c"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build-3",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-o", "output/3.exe",
+                "src/main.3.c"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build-4",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-o", "output/4.exe",
+                "src/main.4.c"
+            ],
+            "group": "build"
+        }
+    ]
+}
